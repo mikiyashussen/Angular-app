@@ -1,0 +1,23 @@
+.container{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+}
+
+.header{
+    
+    background-color: #009169;
+}
+
+.main-content{
+    height: 84vh;
+    
+}
+.sidebar{
+    /* background-color: rgb(230, 230, 230); */
+    border-right: 1px solid #cec6c6;
+}
+
+.footer{
+   
+    
+}

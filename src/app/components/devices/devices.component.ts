@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocationService } from "../../services/location.service";
 
 @Component({
   selector: 'app-devices',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./devices.component.css']
 })
 export class DevicesComponent implements OnInit {
-
-  constructor() { }
+  locationData!: any;
+  constructor(private location: LocationService) { }
 
   ngOnInit(): void {
+    this.location.getLocation().subscribe(data => 
+      this.locationData = data
+     )
   }
-
+ 
+  // getDeviceLocation(){
+   
+  // }
 }
+
+
+
+
+

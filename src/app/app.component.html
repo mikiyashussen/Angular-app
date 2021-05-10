@@ -1,2 +1,24 @@
-<button mat-raised-button color="primary">Click</button>
-<app-header></app-header>
+<!-- <button mat-raised-button color="primary">Click</button> -->
+<div class="container"
+ fxLayout="column"
+ >
+  <!-- Header -->
+  <div class="header">
+    <app-header></app-header>
+  </div>
+
+  <!-- main -->
+  <div class="main-content"
+  fxLayout
+  >
+  <div fxFlex="20%" class="sidebar"><app-sidebar></app-sidebar></div>
+  
+  <router-outlet></router-outlet>
+  <!-- <div class="content"><app-devices></app-devices></div> -->
+  </div>
+  
+  <!-- footer -->
+  <mat-divider></mat-divider>
+
+    <app-footer></app-footer>
+</div>

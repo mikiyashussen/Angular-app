@@ -1,1 +1,16 @@
-<p>sidebar works!</p>
+<mat-nav-list>
+    <!-- <div class="profile">
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="profile">
+        <div class="div">
+            <h3>Jhon Doe</h3>
+            <h4>jhondoe@gmail.com</h4>
+        </div>
+    </div> -->
+
+    <!-- <mat-divider></mat-divider> -->
+
+    <h2 matSubheader>Pages</h2>
+    <a mat-list-item routerLink="/dashboard">Dashboard</a>
+    <a mat-list-item routerLink="">Devices</a>
+</mat-nav-list>
+<button (click)="showFiller = !showFiller">Toggle</button>
